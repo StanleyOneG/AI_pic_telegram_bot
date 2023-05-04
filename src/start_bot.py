@@ -34,4 +34,14 @@ if __name__ == "__main__":
     start_handler = CommandHandler("start", start)
     application.add_handler(start_handler)
 
+    if settings.telegram.webhook_mode:
+        logger.info("Starting bot (webhook mode)...")
+        application.run_webhook(
+            host=settings.telegram.webhook_host,
+            port=settings.telegram.webhook_port,
+            webhook_url=settings.telegram.webhook_url,
+            secret_token=settings.telegram.secret_token,
+        )
+
+    logger.info("Starting bot (polling mode)...")
     application.run_polling()
