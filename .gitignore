@@ -132,7 +132,7 @@ dmypy.json
 
 .python-version
 
-*pyproject.toml
+# *pyproject.toml
 *poetry.lock
 .DS_Store
 .env

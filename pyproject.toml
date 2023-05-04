@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "telegram-bot-kandinsky"
+version = "0.1.0"
+description = "Telegram bot for getting generated images by AI Kandinsky 2.1 from user's promt"
+authors = ["Stanislav <goncharuk.sm@yandex.ru>"]
+readme = "README.md"
+packages = [{include = "telegram_bot_kandinsky"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-telegram-bot = "20.2"
+pydantic = "1.10.7"
+python-dotenv = "^1.0.0"
+
+
+[tool.poetry.group.linter.dependencies]
+flake8 = "4.0"
+wemake-python-styleguide = "0.17.0"
+flake8-bandit = "3.0.0"
+bandit = "1.7.4"
+pre-commit = "^3.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
