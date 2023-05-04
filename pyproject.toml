@@ -15,7 +15,6 @@ python-dotenv = "^1.0.0"
 
 [tool.poetry.group.linter.dependencies]
 flake8 = "4.0"
-wemake-python-styleguide = "0.17.0"
 flake8-bandit = "3.0.0"
 bandit = "1.7.4"
 pre-commit = "^3.3.1"
